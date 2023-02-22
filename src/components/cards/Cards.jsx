@@ -10,7 +10,7 @@ const Cards = ({ recipes }) => {
         <Card key={index}>
           <Header>{recipe.label}</Header>
           <Image src={recipe.image || defaultImage} />
-          <Button onClick={() => navigate("detail", { state: recipe })}>
+          <Button onClick={() => navigate("detail", { state: recipe, replace:false})}>
             View More
           </Button>
         </Card>

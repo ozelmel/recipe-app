@@ -1,24 +1,18 @@
 import styled from "styled-components";
+import Flex from "../../components/globalStyles/Flex"
 
-export const DetailContainer = styled.div`
+export const DetailContainer = styled(Flex)`
   /* en dış container */
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   background: #00adb5;
   min-height: calc(100vh - 75px);
   /* height: fit-content; */
-  padding: 5px;
+  padding: 0.5 rem;
 `;
 
-export const DetailPart = styled.div`
+export const DetailPart = styled(Flex)`
   /* verilerin , içindekiler,resim ve Nutrients in yazdığı yer */
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
   margin: 1rem;
   border: 1px solid white;
   border-radius: 5px;
